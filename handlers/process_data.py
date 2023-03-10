@@ -4,14 +4,12 @@ import re
 import re
 import json
 import sys 
+from models.models import InputSentences
 sys.path.insert(1, '..')
 
 
 def normalize_input_classes(userInput):
-  first_input = json.dumps(userInput)
-  converted_input = json.loads(first_input)
-  
-  texts = converted_input.values()
+  texts = userInput.values()
   texts = str(list(userInput))
   texts = texts.replace('[', '')\
              .replace(']', '')\
