@@ -27,9 +27,13 @@ The API receives a <i>json file</i> as input. It will process the file into a di
 
 
 <h2> Request </h2>
+
 `POST localhost:8000/classes`
 
 <details><summary>Input</summary>
+
+
+```
 {
 	"classes_do_user": {
 		"comprar": [
@@ -51,6 +55,8 @@ The API receives a <i>json file</i> as input. It will process the file into a di
 		]
 	}
 }
+```
+
 </details>
 
 
