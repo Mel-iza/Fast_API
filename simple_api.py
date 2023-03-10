@@ -6,6 +6,7 @@ import re
 import json
 
 from handlers.process_data import normalize_input_classes, get_one_value_from_class
+from models.models import InputSentences
 
 app = FastAPI()
 
@@ -18,9 +19,11 @@ app.add_middleware(
 )
 
 
-
-
 @app.post('/classes')
-def get_input_classes(userInput):
-  recomended_value = get_one_value_from_class(userInput)
+def get_input_classes(user_input: InputSentences):
+  recomended_value = get_one_value_from_class(user_input.classes_do_user)
+  print(recomended_value)
   return recomended_value
+
+
+
