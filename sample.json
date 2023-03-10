@@ -1,0 +1,24 @@
+{
+
+    "Comprar": [
+        "Comprar",
+        "Comercializar",
+        "adquirir"
+    ],
+
+    "preço": [
+        "preço",
+        "valor"
+    ],
+    
+    "entrega":[
+        "entrega",
+        "envio",
+        "correios"
+    ],
+    
+    "resultado":[
+        "resultados"
+    ]
+
+}
